@@ -18,11 +18,6 @@ pipeline as GPT / Llama / Claude-class models, scaled down so it trains on
 - **Inference** — KV-cached sampling with temperature / top-k / top-p
   ([generate.py](generate.py)), interactive multi-turn chat ([chat.py](chat.py))
 
-> Note: Claude's exact architecture is not public. This implements the
-> modern published decoder-only transformer stack that GPT-2/3, Llama, and
-> Claude-class models all belong to — the pipeline stages (tokenizer →
-> pretrain → SFT → sample) are the real ones, minus RLHF and minus a few
-> thousand GPUs.
 
 ## Quickstart
 
